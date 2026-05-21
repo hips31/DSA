@@ -1,0 +1,55 @@
+# Bài 4. Phân tích độ phức tạp
+
+Với mảng có `n` phần tử, thuật toán tìm kiếm tuyến tính kiểm tra lần lượt từ phần tử đầu tiên đến phần tử cuối cùng.
+
+## (a) Trường hợp tốt nhất
+
+Phần tử cần tìm nằm ngay ở vị trí đầu tiên của mảng.
+
+```text
+A[0] == x
+```
+
+Số phép so sánh:
+
+```text
+1
+```
+
+---
+
+## (b) Trường hợp xấu nhất
+
+Phần tử cần tìm nằm ở cuối mảng hoặc không có trong mảng.
+
+Khi đó thuật toán phải duyệt hết `n` phần tử.
+
+Số phép so sánh:
+
+```text
+n
+```
+
+---
+
+## (c) Trung bình
+
+Giả sử phần tử có thể xuất hiện ở bất kỳ vị trí nào trong mảng, số phép so sánh trung bình là:
+
+```text
+(n + 1) / 2
+```
+
+---
+
+## Độ phức tạp thời gian
+
+Từ các trường hợp trên, thuật toán tìm kiếm tuyến tính có độ phức tạp thời gian:
+
+```text
+O(n)
+```
+
+## Kết luận
+
+Tìm kiếm tuyến tính đơn giản, dễ hiểu, nhưng khi số phần tử `n` càng lớn thì thời gian tìm kiếm càng tăng tuyến tính theo `n`.
